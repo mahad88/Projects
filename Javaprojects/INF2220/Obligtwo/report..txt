@@ -1,0 +1,17 @@
+READING THE FILE()
+This method has several loop which will affect
+the efficiency. because each complexity is loop is O(N).
+Since we go to every vertices and edges once.
+
+ HASCYCLIC()
+ This method has a complexity is O(|V| + |E|)=O(n)since we
+iterate through each node and edges (standard dfs complexity).
+
+For both createEvent(), earlyStart(),LatestStart() complexitity is 
+O(|V| + |E|) because all node and edges are gone through for any
+operarion.
+The startTraversion(),PrintTasks() Have also O(|V| + |E|).
+We go through each task.
+Since most of the method have O(|V| + |E|) , the program complexity
+is O(N).
+
