@@ -1,0 +1,45 @@
+My program works as it should. I have sent two test files that show the output of my program
+and two log files.
+
+The program consists of 
+1. Decoder
+2. Counter
+3. Main
+
+	1.Decoder
+The decoder I have built take 4-bit input and activates one of the instructions.
+The instruction that's activated are 1000(LSB),1001(MSB),1010(Load) and 1011(WE). 
+The decoder will be used in the main (I will explain in the main part).
+
+	2.Counter.
+The counter is built from 4 half adder that i made myself and a register. The counter 
+start from 0000 to 1111. It takes two input a constant and the value it gets from the
+register. The counter will be connected to program memory in the main part of my program
+
+	3.Main
+Since i have implemented my program with Harvard architecture i have separate program 
+memory and Data memory. It also has several other components.
+
+1. Program memory -it takes input from the counter i made (at A) and its output are sent
+ (at D) Data memory and the decoder. The first 4 bit (MBS)are sent the decoder and the 
+last 4 bit (LSB) are sent to the Data memory.
+
+2. Decoder-it take 4-bit input from the program memory and send 4 output-LSB, MSB, Load 
+to Data memory and WE to Data memory also. The LSB and MSB are combined in a splitter 
+and will be the input for Register and Data memory (at D).
+
+3. Register- Its labeled as  "R" .It takes input instruction bus at D  and send output 
+to itself with the help of two set of 4 bit tri sate buffers.
+
+4.Data memory- Take inputs  1010 (at ld) , 1011 (at sel) , program data from D  to  
+A in data memory and  from the instruction bus to its D . it also a clock and a reseter 
+. to clear to reset.
+
+
+
+
+
+
+
+
+
