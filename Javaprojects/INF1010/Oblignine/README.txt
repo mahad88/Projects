@@ -1,5 +1,3 @@
-Mahad Hundub Abdullahi
-Oblig   nine inf1010
 
 1. This oblig was quite  relevant to what learnt in the past leactures.It
    was a good training for implementing threads .
