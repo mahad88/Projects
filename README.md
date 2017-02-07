@@ -1,1 +1,1 @@
-This are some of my school projects. 
+These are some projects i have done. Most of the projects are in java while some are in c and assembly.To understand them i have attached a norwegian text to every project that explain the requirement of every project.
